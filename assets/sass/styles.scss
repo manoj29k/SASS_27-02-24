@@ -1,0 +1,44 @@
+// mixin = @include
+//  placeholder = @extend
+@import "reset";
+@import "base";
+@import "layout";
+
+main {
+  @include nano();
+  @extend %manoj;
+  //   background: transparentize($orange, 0.7)
+  // background: lighten($orange, 20%)
+  background: darken($orange, 20%);
+}
+
+p {
+  @include nano();
+  @extend %manoj;
+}
+
+header {
+  width: cp(1980px, 1980px);
+  background: lighten($orange, 20%);
+  min-height: $value * 4;
+
+  nav {
+    @include nav();
+
+    li {
+      @include li();
+
+      ul {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}

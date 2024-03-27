@@ -1,0 +1,30 @@
+// diretives
+
+@mixin nano() {
+  width: cp(415px, 1980px);
+  height: $value * 80;
+  background: $orange;
+}
+@mixin nav() {
+  width: cp(1980px, 1980px);
+  background: $orange;
+  height: $value * 13;
+}
+
+@mixin li() {
+  display: inline-block;
+  width: $value * 4;
+}
+// placeholder = class
+
+%manoj {
+  color: blue;
+  width: 400px;
+}
+
+// fonction
+@function cp($valeur, $nombre) {
+  @return ($valeur / $nombre) * 100%;
+}
+
+// conditions

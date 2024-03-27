@@ -1,0 +1,119 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+main, p {
+  color: blue;
+  width: 400px; }
+
+main {
+  width: 20.9595959596%;
+  height: 800px;
+  background: #ff4b01;
+  background: #9a2d00; }
+
+p {
+  width: 20.9595959596%;
+  height: 800px;
+  background: #ff4b01; }
+
+header {
+  width: 100%;
+  background: #ff9367;
+  min-height: 40px; }
+  header nav {
+    width: 100%;
+    background: #ff4b01;
+    height: 130px; }
+    header nav li {
+      display: inline-block;
+      width: 40px; }
+      header nav li ul {
+        list-style: none; }
+        header nav li ul a {
+          text-decoration: none; }
+          header nav li ul a:hover {
+            color: red; }
+
+/*# sourceMappingURL=styles.css.map */
