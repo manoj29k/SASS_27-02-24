@@ -9,6 +9,7 @@
   width: cp(1980px, 1980px);
   background: $orange;
   height: $value * 13;
+  color: white;
 }
 
 @mixin li() {
@@ -28,3 +29,22 @@
 }
 
 // conditions
+@mixin responsive-for($media) {
+  @if $media == ordinateur {
+    @media screen and ($superieur: $ordi) {
+      @content;
+    }
+  } @else if $media == tablette {
+    @media screen and ($superieur: ($tablet + 1)) and ($inferieur: ($ordi - 1)) {
+      @content;
+    }
+  } @else if $media == tbsm {
+    @media screen and ($superieur: $phone) and ($inferieur: $tablet) {
+      @content;
+    }
+  } @else if $media == smartphone {
+    @media screen and ($inferieur: ($phone - 1)) {
+      @content;
+    }
+  }
+}

@@ -42,3 +42,10 @@ header {
     }
   }
 }
+
+
+@media #{$mart}{
+  body{
+    background: $orange;
+  }
+}

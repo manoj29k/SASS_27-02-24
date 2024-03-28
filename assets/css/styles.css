@@ -105,7 +105,8 @@ header {
   header nav {
     width: 100%;
     background: #ff4b01;
-    height: 130px; }
+    height: 130px;
+    color: white; }
     header nav li {
       display: inline-block;
       width: 40px; }
@@ -115,5 +116,9 @@ header {
           text-decoration: none; }
           header nav li ul a:hover {
             color: red; }
+
+@media (max-width: 320px) {
+  body {
+    background: #ff4b01; } }
 
 /*# sourceMappingURL=styles.css.map */
