@@ -120,5 +120,16 @@ header {
 @media (max-width: 320px) {
   body {
     background: #ff4b01; } }
+@media screen and (min-width: 1024px) {
+  #nav-links {
+    display: flex;
+    list-style: none;
+    flex-direction: row; } }
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  #nav-links {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5); } }
 
 /*# sourceMappingURL=styles.css.map */

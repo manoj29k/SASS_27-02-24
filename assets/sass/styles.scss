@@ -49,3 +49,18 @@ header {
     background: $orange;
   }
 }
+
+#nav-links{
+  @include responsive-for(ordinateur){
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+  }
+  @include responsive-for(tablette){
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background: rgba(0,0,0, 0.5);
+
+  }
+}
